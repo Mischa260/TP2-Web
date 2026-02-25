@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP3 HTML5 - BTS SIO</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #4b3f72;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #5a4fcf;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #444;
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        hr {
+            margin: 30px 0;
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #667eea, #764ba2);
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+
+        blockquote {
+            background-color: #f3f4ff;
+            border-left: 5px solid #667eea;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        strong {
+            color: #4b3f72;
+        }
+
+        mark {
+            background-color: #ffe066;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>TP3 – Mémento HTML5 (Balises de texte)</h1>
+
+<h2>Balises de titres</h2>
+<p>Les balises <strong>&lt;h1&gt; à &lt;h6&gt;</strong> permettent de structurer le contenu.</p>
+
+<h1>Titre niveau 1</h1>
+<h2>Titre niveau 2</h2>
+<h3>Titre niveau 3</h3>
+
+<hr>
+
+<h2>Balise &lt;p&gt;</h2>
+<p>La balise paragraphe permet d’écrire un bloc de texte.</p>
+
+<hr>
+
+<h2>Balise &lt;strong&gt;</h2>
+<p>Permet de mettre un texte important : <strong>texte important</strong></p>
+
+<hr>
+
+<h2>Balise &lt;em&gt;</h2>
+<p>Permet de mettre un texte en emphase : <em>texte en italique</em></p>
+
+<hr>
+
+<h2>Balise &lt;mark&gt;</h2>
+<p>Permet de surligner un texte : <mark>texte surligné</mark></p>
+
+<hr>
+
+<h2>Listes</h2>
+
+<h3>Liste non ordonnée</h3>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>SQL</li>
+</ul>
+
+<h3>Liste ordonnée</h3>
+<ol>
+    <li>Analyse</li>
+    <li>Développement</li>
+    <li>Tests</li>
+</ol>
+
+<hr>
+
+<h2>Balise &lt;br&gt;</h2>
+<p>Ligne 1<br>Ligne 2</p>
+
+<hr>
+
+<h1>Le langage SQL</h1>
+
+<h2>1.1. Définition</h2>
+
+<p>
+Le langage SQL (<strong>Structured Query Language</strong>) est un langage permettant la création et la gestion d’une base de données relationnelle.
+</p>
+
+<p>
+Il a été créé en 1986 et est issu du modèle relationnel inventé en 1970 par <strong>Mr Codd</strong>.
+</p>
+
+<p>
+Il est utilisé dans des SGBDR comme Oracle, SQL Server, MySQL ou PostgreSQL.
+</p>
+
+<h2>1.2. Les différentes normes utilisées</h2>
+
+<ul>
+    <li>SQL 89</li>
+    <li>SQL 92</li>
+    <li>SQL 2011</li>
+</ul>
+
+<blockquote>
+"SQL-92 définit trois niveaux de conformité : ENTRY, INTERMEDIATE et FULL."
+</blockquote>
+
+<h1>2. Le modèle de données utilisé dans le cours</h1>
+
+<h2>2.1. Modèle entité-association (MCD)</h2>
+<h2>2.2. Modèle relationnel (MRD)</h2>
+
+<h2>2.3. Description des tables</h2>
+
+<h3>fonction_personnel</h3>
+<p>(code_fonction, libelle_fonction)</p>
+<p><strong>Clé primaire :</strong> code_fonction</p>
+
+<h3>service</h3>
+<p>(num_service, libelle_service, capacite_accueil, date_ouverture)</p>
+<p><strong>Clé primaire :</strong> num_service</p>
+
+</div>
+
+</body>
+</html>

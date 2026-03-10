@@ -1,0 +1,116 @@
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      min-width: 600px;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin: 20px 0 10px;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    p.instructions {
+      text-align: center;
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+
+    .memory-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+
+    .card {
+      position: relative;
+      aspect-ratio: 1 / 1;
+      cursor: pointer;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card .face-cachee {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #00ccff, #7700ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      transition: opacity 0.4s ease;
+      border-radius: 10px;
+    }
+
+    .card .face-cachee::after {
+      content: "?";
+      font-size: 2.5rem;
+      color: rgba(255,255,255,0.7);
+      font-weight: bold;
+    }
+
+
+    .card:hover .face-cachee {
+      background: linear-gradient(135deg, #ffe600, #ff1900);
+    }
+
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border: solid 1px black; 
+    }
+
+
+    .card input[type="checkbox"] {
+      display: none;
+    }
+
+
+    .card input[type="checkbox"]:checked ~ .face-cachee {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+
+    .card label {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+
+    .card input[type="checkbox"]:checked ~ label {
+      pointer-events: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 0.8rem;
+    }

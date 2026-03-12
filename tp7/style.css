@@ -2,7 +2,7 @@ body {
   background: #000000;
   color: #cdd8e3;
   font-family: sans-serif;
-  padding: 40px;
+  padding: 80px;
 }
 
 h1 {
@@ -16,14 +16,14 @@ ul {
 }
 
 li {
-  padding: 12px 0;
-  border-bottom: 1px solid #3f0064;
+  padding: 24px 0;
+  border-bottom: 1px solid #000000;
 }
 
 a {
-  color: #0011ff;
+  color: #7700ff;
   text-decoration: none;
-  font-size: 15px;
+  font-size: px;
 }
 
 a:hover {
